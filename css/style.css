@@ -35,14 +35,20 @@ p {
 }
 /*  regole pulsanti */
 
-.forma-pulsante {
-    border-radius: 20px;
-    padding: 10px 20px;
+.pulsanti-piccoli,.pulsanti-grandi {
+    
 }
 
 .pulsanti-grandi {
     font-size: 20px;
     border-radius: 30px;
+    padding: 10px 20px;
+}
+
+.pulsanti-piccoli {
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 8px 16px;
 }
 
 .pulsanti-bianchi {
