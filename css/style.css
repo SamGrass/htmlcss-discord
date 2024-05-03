@@ -175,14 +175,22 @@ header {
 
 .container-sezione {  
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container-sezione h3 {
     padding: 20px 35px 40px;
-    display: inline-block;
     background-image: url(../img/stars.svg);
     background-repeat: no-repeat;
     background-size: contain;
+    max-width: fit-content;
+}
+
+#pulsante-main-bot {
+    max-width: fit-content;
 }
 
 /* regole generali footer */
