@@ -1,7 +1,11 @@
+/* regole generali */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
 }
 
 .larghezza-contenuto {
@@ -10,11 +14,45 @@
     padding: 40px 0;
 }
 
+.logo-discord {
+    width: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/*  regole pulsanti */
+
+.forma-pulsante {
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.pulsanti-grandi {
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.pulsanti-bianchi {
+    background-color: white;
+    color: black;
+}
+
+.pulsanti-neri {
+    background-color: #23272a;
+}
+
+#pulsante-freccia::before {
+    content: "\2193";
+    vertical-align: 3px; 
+}
+
 /* regole generali header */
 
-
 .container-nav {
-    padding: 20px 0;
+    padding: 20px 0 100px;
 }
 
 .container-header{
@@ -22,11 +60,15 @@
 }
 
 header {
-    min-height: 300px;
-
+    min-height: 600px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    color: white;
+    
+    
     /* debug */
 
-    background-color: blue;
+    /* background-color: blue; */
 }
 
 /* regole nav */
@@ -35,42 +77,56 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
-.col-nav {
-
-    /* debug */
-
-    min-height: 70px;
-    background-color: yellow;
-    border: 2px dotted black;
-    
+.col-lat-sx,.col-lat-dx {
+    flex-grow: 1;
 }
 
-.col-laterali {
-    width: 25%;
+.col-lat-sx{
+    display: flex;
+}
+
+.col-lat-dx{
+    text-align: end;
 }
 
 #nav-header .col-centrale {
-    width: 50%;
     list-style-type: none;
+    flex-grow: 2;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* regole parte main header */
 
 #main-header {
-    width: 80%;
+    width: 60%;
     margin: 0 auto;
+    text-align: center;
 
     /* debug */
 
-    min-height: 200px;
+    /* min-height: 200px;
     background-color: blueviolet;
-    border: 2px dotted black;
+    border: 2px dotted black; */
     
+}
+
+#main-header h1{
+    font-size: 80px;
+    padding-bottom: 40px;
+}
+
+#main-header p {
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+#main-header a {
+    margin: 10px;
 }
 
 /* regole generali main */
